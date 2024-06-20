@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Be Vietnam Pro' 'Literata';
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+}

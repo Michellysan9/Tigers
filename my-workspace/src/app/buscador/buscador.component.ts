@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './buscador.component.html',
   styleUrl: './buscador.component.css'
 })
+
 export class BuscadorComponent {
 
 }

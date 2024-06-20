@@ -1,0 +1,34 @@
+div input {
+  height: 40px;
+  width: 70%;
+  margin: 0 auto 0 auto;
+}
+
+form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="search"] {
+  width: 300px;
+  height: 36px;
+  padding: 0 40px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #FA4616;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
