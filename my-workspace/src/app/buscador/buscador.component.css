@@ -1,6 +1,4 @@
-div input {
-  height: 40px;
-  width: 70%;
+div {
   margin: 0 auto 0 auto;
 }
 
@@ -12,7 +10,7 @@ form {
 }
 
 input[type="search"] {
-  width: 300px;
+  width: 600px;
   height: 36px;
   padding: 0 40px 0 10px;
   border: 1px solid #ccc;
