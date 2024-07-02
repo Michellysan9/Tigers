@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { BuscadorComponent } from './buscador/buscador.component';
+import { BuscadorComponent } from './pages/buscador/buscador.component';
 
 @Component({
   selector: 'app-root',
