@@ -1,0 +1,42 @@
+.sidebar {
+  background-color: #fa4616;
+  color: #fff;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  left: -250px;
+  top: 0;
+  transition: left 0.3s ease;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  padding: 10px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+}
+.sidebar a:hover {
+  background-color: #fa4616;
+}
+.sidebar details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.content {
+  padding: 20px;
+  margin-left: 250px;
+  position: relative;
+}

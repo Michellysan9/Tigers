@@ -1,0 +1,64 @@
+/* styles.css */
+
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+app-navbar,
+app-sidebar {
+  background-color: #5f8db5ff;
+  color: #000;
+}
+
+/* Estilos del contenido */
+input {
+  border-style: #fa4616;
+  padding: 10px;
+  padding-right: 60px;
+  border-radius: 5px 0 0 5px;
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+}
+input:focus {
+  box-shadow: 0 0 5px #3786da;
+  border: 1px solid #30567e;
+}
+button {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: #fa4616;
+  color: white;
+}
+.mi-imagen {
+  width: 100%;
+  max-width: 170px;
+  border: 2px solid #ddd;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del carrusel */
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}

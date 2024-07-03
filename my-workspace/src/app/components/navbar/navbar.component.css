@@ -1,0 +1,35 @@
+.navbar {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: #000;
+}
+.logo-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  max-width: 40%;
+  height: auto;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu a {
+  color: #000;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 1.2em;
+}
+.menu a:hover {
+  color: #555;
+}

@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
+import { BuscadorComponent } from '../../components/buscador/buscador.component';
 
 @Component({
   selector: 'app-pagina-buscador',
   standalone: true,
-  imports: [],
+  imports: [BuscadorComponent],
   templateUrl: './pagina-buscador.component.html',
   styleUrl: './pagina-buscador.component.css'
 })
+
 export class PaginaBuscadorComponent {
 
 }
