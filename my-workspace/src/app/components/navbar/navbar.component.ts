@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  menu: HTMLDivElement | null = document.querySelector('.sidebar');
 
+  openNav() {
+    this.menu!.style.left = '0px';
+}
 }
