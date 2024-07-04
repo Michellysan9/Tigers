@@ -12,6 +12,7 @@ import { BuscadorComponent } from '../../components/buscador/buscador.component'
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
+
 export class HomeComponent {
   currentIndex:number = 0;
 
