@@ -1,13 +1,22 @@
-header {
-    height: 100px;
+body {
+    height: 100vh;
 }
 
 .container {
     display: grid;
     grid-template-columns: 20% 80%;
-    height: 100%;
 }
 
-.sideBar {
+#sideBar {
+    display: flex;
+    flex-direction: column;
     background-color: #FA4616;
+    justify-content: center;
+    align-content: center;
+    padding: 15%;
+    color: white;
+}
+
+#mainContent {
+    background-color: white;
 }

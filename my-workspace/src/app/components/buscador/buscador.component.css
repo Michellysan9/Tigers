@@ -1,14 +1,9 @@
-div {
-  margin: 0 auto 0 auto;
-  margin-top: 20px;
-}
-
 form {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin: 5%;
 }
 
 input[type="search"] {
@@ -27,6 +22,6 @@ button[type="submit"] {
   padding: 10px 20px;
   border-radius: 20px;
   cursor: pointer;
-  margin-left: -60px; /* Adjust this value to position the button over the input */
-  z-index: 1; /* Ensure the button appears on top of the input */
+  margin-left: -60px;
+  z-index: 1;
 }
