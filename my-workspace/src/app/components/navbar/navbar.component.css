@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 10%;
 }
 .menu-icon {
   font-size: 30px;
