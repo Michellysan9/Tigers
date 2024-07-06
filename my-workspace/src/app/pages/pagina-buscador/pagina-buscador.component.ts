@@ -4,6 +4,7 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { BotonCategoriaComponent } from '../../components/boton-categoria/boton-categoria.component';
 import { CommonModule } from '@angular/common';
+import fs from 'node:fs'
 
 @Component({
   selector: 'app-pagina-buscador',
@@ -16,4 +17,6 @@ import { CommonModule } from '@angular/common';
 export class PaginaBuscadorComponent {
   categorias = ['Hogar y finca', 'Manualidades', 'Recetas de cocina', 'Cultura', 'Ciencias Naturales', 'Para pensar y jugar', 'Salud para contar', 'Salud y enfermedad para niños y adultos', 'Primeros años', 'Literatura']
   subLiteratura = ['Cuentos populares', 'Cuentos infantiles', 'Cuentos para jovenes y adultos', 'Poemas rimas y canciones', 'Juegos del lenguaje']
+
+  libros = fs.readdirSync('../../../PDFs');
 }

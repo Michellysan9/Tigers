@@ -12,5 +12,5 @@ import { BuscadorComponent } from './components/buscador/buscador.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-workspace';
+  title = 'Secretos para contar';
 }
