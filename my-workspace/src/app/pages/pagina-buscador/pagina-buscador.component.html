@@ -7,7 +7,7 @@
         </div>
         <div id="mainContent">
             <app-buscador></app-buscador>
-            <p *ngFor="let libro of libros">{{libro}}</p>
+            <p *ngFor="let libro of libros">{{libro.replace('.pdf', ' ')}}</p>
         </div>
     </div>
     <app-footer></app-footer>
