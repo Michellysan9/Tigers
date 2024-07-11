@@ -2,20 +2,13 @@ body {
     height: 100vh;
 }
 
-.container {
+.bookContainer {
     display: grid;
-    grid-template-columns: 20% 80%;
-}
-
-#sideBar {
-    display: flex;
-    flex-direction: column;
-    background-color: #FA4616;
-    justify-content: center;
-    align-content: center;
-    padding: 15%;
-    color: white;
-    text-align: center;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(6, minmax(100px, 1fr));
+    column-gap: 5px;
+    row-gap: 20px;
+    padding: 5%;
 }
 
 #mainContent {

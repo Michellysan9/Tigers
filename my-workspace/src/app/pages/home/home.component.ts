@@ -16,15 +16,14 @@ import { BuscadorComponent } from '../../components/buscador/buscador.component'
 export class HomeComponent {
   currentIndex:number = 0;
 
-  showNextImage() {
-    const carouselImages: HTMLDivElement | null = document.querySelector('.carousel-images');
-    const images = document.querySelectorAll('.carousel-images img');
-    this.currentIndex = (this.currentIndex + 1) % images.length;
-    const offset = -this.currentIndex * images[0].clientWidth;
-    carouselImages!.style.transform = `translateX(${offset}px)`;
+  // showNextImage() {
+  //   const carouselImages: HTMLDivElement | null = document.querySelector('.carousel-images');
+  //   const images = document.querySelectorAll('.carousel-images img');
+  //   this.currentIndex = (this.currentIndex + 1) % images.length;
+  //   const offset = -this.currentIndex * images[0].clientWidth;
+  //   carouselImages!.style.transform = `translateX(${offset}px)`;
 }
 
-}
-const component = new HomeComponent
+// const component = new HomeComponent
 
-setInterval(component.showNextImage, 3000); // Cambia la imagen cada 3 segundos
+// setInterval(component.showNextImage, 3000); // Cambia la imagen cada 3 segundos

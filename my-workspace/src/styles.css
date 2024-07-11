@@ -2,6 +2,7 @@
 body{
     font-family: 'Be Vietnam Pro', 'Literata', 'Be Vietnam Pro Bold', 'Be Vietnam Pro Semibold';
     margin: 0;
+    height: 100vh;
 }
 
 html, body { height: 100%; }

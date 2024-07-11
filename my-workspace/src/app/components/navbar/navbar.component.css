@@ -3,8 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #5f8db5ff;
+  color: white;
   height: 10%;
 }
+
 .menu-icon {
   font-size: 30px;
   cursor: pointer;

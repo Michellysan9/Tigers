@@ -1,13 +1,14 @@
 <body>
     <app-navbar></app-navbar>
     <div class="container">
-        <div id="sideBar">
-            <h1>Categorias</h1>
-            <app-boton-categoria *ngFor="let category of categorias" category="{{category}}"></app-boton-categoria>
-        </div>
         <div id="mainContent">
-            <app-buscador></app-buscador>
-            <p *ngFor="let libro of libros">{{libro.replace('.pdf', ' ')}}</p>
+            <app-buscador [categorias]="categorias"
+                (categorySelected)="selectedCategory= $event"
+                (searchValueChanged)="searchValue= $event"            
+            ></app-buscador>
+            <div class="bookContainer">
+                <app-book *ngFor="let libro of filteredBooks(selectedCategory, searchValue)" [book]="libro"></app-book>
+            </div>
         </div>
     </div>
     <app-footer></app-footer>

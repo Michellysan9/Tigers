@@ -1,6 +1,8 @@
 export interface Book {
     name: string,
-    id:number,
+    favorite:boolean,
     category:string,
-    url:string
+    url:string,
+    imgUrl:string,
+    saved:boolean
 }
