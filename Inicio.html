@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Web</title>
+    <link rel="stylesheet" href="Inicio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="navbar">
+        <span class="menu-icon" onclick="openNav()">☰</span>
+        <div class="logo-container">
+            <img class="logo" src="img/SPC_logotipo_Horizontal_AlMargen_RGB (1).png" alt="SPC_logotipo_Horizontal_Secretos_para_contar">
+        </div>
+        <div class="bus">
+            <input type="text" id="search" name="search" placeholder="Buscar..." required>
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+        <button id="toggleDarkMode"><i class="fas fa-moon"></i></button>
+    </div>
+
+    <div class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <ul>
+            <a href="Login.html">Iniciar Sesión</a>
+            <a href="Inicio.html">Inicio</a>
+            <a href="Accesible.html">Accesible</a>
+            <a href="Biblioteca.html">Biblioteca</a>
+        </ul>
+    </div>
+    <div class="popup-container">
+        <h1>Bienvenidos a Secretos Para Contar</h1>
+        <p>Visita nuestro sitio web:</p>
+        <p><a href="https://secretosparacontar.org/" id="openPopup" class="popup-button">Ir al sitio</a></p>
+      </div>
+    
+    <div class="content">
+
+        <h1>Bienvenidos a Secretos Para Contar</h1>
+        <div class="carousel">
+            <div class="carousel-images">
+                <img src="img/libros/A-QUE-TE-COJO.webp" alt="Vida después de la muerte - Una imagen misteriosa" class="mi-imagen">
+                <img src="img/libros/ANIMALES.webp" alt="" class="mi-imagen">
+                <img src="img/libros/C6-del-campo-a-la-mesa (1).webp" alt="" class="mi-imagen">
+                <img src="img/libros/C6-del-campo-a-la-mesa.webp" alt="" class="mi-imagen">
+                <img src="img/libros/cuentos-para-contar.webp" alt="" class="mi-imagen">
+                <img src="img/libros/LA-TIERRA-EL-CIELO.webp" alt="" class="mi-imagen">
+                <img src="img/libros/LOS-VIAJES.webp" alt="" class="mi-imagen">
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de aliados 
+    <div class="allies-section">
+        <h2>Nuestros Aliados</h2>
+        <div class="allies">
+            <a href="https://www.haceb.com/"><img src="img/" alt="Haceb" class="ally-image"></a>
+            <a href="https://www.fundacionfraternidadmedellin.org/"><img src="img/fundacion_fraternidad.png" alt="Fundación Fraternidad Medellín" class="ally-image"></a>
+            <a href="https://www.grupoargos.com/"><img src="img/grupo_argos.png" alt="Grupo Argos" class="ally-image"></a>
+            <a href="https://www.exito.com/"><img src="img/exito.png" alt="Éxito" class="ally-image"></a>
+            <a href="https://www.bancolombia.com/"><img src="img/bancolombia.png" alt="Bancolombia" class="ally-image"></a>
+            <a href="https://www.corautos.com/"><img src="img/corautos.png" alt="Corautos" class="ally-image"></a>
+            <a href="https://www.medellin.gov.co/"><img src="img/medellin.png" alt="Medellín" class="ally-image"></a>
+        </div>
+    </div>
+-->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="img/SPC_logotipo_Horizontal_AlMargen_RGB (1).png" alt="Secretos para contar logo">
+            </div>
+            <div class="footer-links">
+                <a href="#">Política de privacidad y protección de datos personales</a>
+                <p>© Todos los derechos reservados</p>
+            </div>
+            <div class="footer-contact">
+                <p>Contáctenos</p>
+                <p><a href="mailto:info@secretosparacontar.org">info@secretosparacontar.org</a></p>
+                <p><a href="tel:+576043220690">(57) 604 322 06 90</a></p>
+                <p><a href="#">Trabaja con nosotros</a></p>
+                <p>Calle 11A #43B – 41, Barrio Manila, Medellín, Colombia</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Inicio.js">
+       
+    </script>
+</body>
+</html>

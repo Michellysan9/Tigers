@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Biblioteca de Libros</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        header {
+            background-color: #618eb4;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        header h1 {
+            font-size: 28px;
+            margin: 0;
+        }
+        
+        footer {
+            background-color: #618eb4;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .footer-left,
+        .footer-center,
+        .footer-right {
+            flex: 1;
+        }
+        
+        .footer-left img {
+            width: 100px;
+            height: auto;
+        }
+        
+        .footer-logo {
+            max-width: 100%;
+        }
+        
+        .footer-center {
+            text-align: center;
+            margin-top: 10px; /* Ajuste para separar los párrafos */
+        }
+        
+        .footer-right {
+            text-align: right;
+        }
+        
+        .footer-right p,
+        .footer-right a {
+            margin: 0;
+            line-height: 1.6;
+        }
+        
+        .footer-right .social-icons a {
+            color: white;
+            margin-right: 10px;
+            font-size: 20px;
+        }
+        
+        .footer-right .social-icons a:last-child {
+            margin-right: 0;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            background-color: #618eb4;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px; /* Ajuste para separar los enlaces */
+        }
+        
+        a:hover {
+            background-color: #618eb4;
+        }
+        
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        
+        .dark-mode header,
+        .dark-mode footer {
+            background-color: #1f1f1f;
+        }
+        
+        .dark-mode a {
+            background-color: #618eb4;
+        }
+        
+        .dark-mode a:hover {
+            background-color: #0056b3;
+        }
+        
+        #toggle-dark-mode {
+            padding: 10px;
+            background-color: #fa4616;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        #toggle-dark-mode i {
+            font-size: 18px;
+        }
+        
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            header {
+                padding: 10px;
+            }
+            header h1 {
+                font-size: 24px;
+            }
+            #toggle-dark-mode {
+                padding: 8px;
+            }
+            #toggle-dark-mode i {
+                font-size: 16px;
+            }
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .footer-left,
+            .footer-center,
+            .footer-right {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .footer-left img {
+                margin-bottom: 10px;
+            }
+            .footer-right {
+                text-align: center;
+            }
+        }
+        
+        progress {
+            width: 100%;
+            height: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        
+        .page {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Mi Biblioteca de Libros</h1>
+        <button id="toggle-dark-mode"><i class="fas fa-moon"></i></button>
+    </header>
+
+    <main>
+        <a href="Biblioteca.html" class="back-button">
+            <i class="fas fa-arrow-left"></i> Volver
+        </a>
+        <h1>HOLA</h1>
+        <div id="pdf-viewer"></div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="logo.png" alt="Secretos para contar logo" class="footer-logo">
+                <p>Secretos para contar</p>
+            </div>
+            <div class="footer-center">
+                <p>Política de privacidad y protección de datos personales</p>
+                <p>© Todos los derechos reservados</p>
+            </div>
+            <div class="footer-right">
+                <p>Contáctenos</p>
+                <a href="mailto:info@secretosparacontar.org">info@secretosparacontar.org</a><br>
+                <a href="tel:+576043220690">(57) 604 322 06 90</a><br>
+                <a href="#">Trabaja con nosotros</a><br>
+                <p>Calle 11A #43B – 41, Barrio Manila, Medellín, Colombia</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <progress id="progress-bar" value="0" max="100"></progress>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script>
+        const toggleButton = document.getElementById('toggle-dark-mode');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const icon = toggleButton.querySelector('i');
+            if (document.body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+            }
+        });
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const bookId = urlParams.get('id');
+        let pdfLibro = '/PDFs/';
+        const conCategoría = JSON.parse(localStorage.getItem('conCategoría'));
+
+        window.addEventListener('load', () => {
+            getBook(bookId);
+            mostrarPDF(pdfLibro);
+        });
+
+        function getBook(id){
+            conCategoría.find((fila) => {
+                if(fila[0] == id){
+                    pdfLibro += fila[4];
+                }
+            });
+        }
+
+        function mostrarPDF(url){
+            const pdfjsLib = window['pdfjs-dist/build/pdf'];
+            pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js';
+
+            pdfjsLib.getDocument(url).promise.then(function(pdfDoc_) {
+                const pdfViewer = document.getElementById('pdf-viewer');
+                const progressBar = document.getElementById('progress-bar');
+                let pdfDoc = pdfDoc_;
+                const numPages = pdfDoc.numPages;
+                let pagesRendered = 0;
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const pageNumber = parseInt(entry.target.getAttribute('data-page-number'), 10);
+                            updateProgressBar(pageNumber);
+                        }
+                    });
+                }, {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.1
+                });
+
+                function renderPage(num) {
+                    pdfDoc.getPage(num).then(function(page) {
+                        const viewport = page.getViewport({ scale: 1.5 });
+                        const canvas = document.createElement('canvas');
+                        const context = canvas.getContext('2d');
+                        canvas.height = viewport.height;
+                        canvas.width = viewport.width;
+                        canvas.classList.add('page');
+                        canvas.setAttribute('data-page-number', num);
+
+                        const renderContext = {
+                            canvasContext: context,
+                            viewport: viewport
+                        };
+                        page.render(renderContext).promise.then(() => {
+                            pdfViewer.appendChild(canvas);
+                            observer.observe(canvas);
+                        });
+                    });
+                }
+
+                function updateProgressBar(pageNumber) {
+                    const progress = (pageNumber / numPages) * 100;
+                    progressBar.value = progress;
+                }
+
+                for (let num = 1; num <= pdfDoc.numPages; num++) {
+                    renderPage(num);
+                }
+            });
+        }
+
+        window.addEventListener('scroll', function() {
+            const footer = document.querySelector('footer');
+            const scrollHeight = document.documentElement.scrollHeight;
+            const clientHeight = document.documentElement.clientHeight;
+            const scrollTop = window.scrollY || window.pageYOffset;
+
+            const threshold = scrollHeight - clientHeight - 200;
+
+            if (scrollTop > threshold) {
+                footer.style.transform = 'translateY(0)';
+            } else {
+                footer.style.transform = 'translateY(100%)';
+            }
+        });
+
+    </script>
+</body>
+
+</html>

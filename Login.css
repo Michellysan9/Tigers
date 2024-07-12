@@ -1,0 +1,205 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar, .sidebar {
+    background-color: #5f8db5ff;
+    color: #000;
+}
+
+.navbar {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #000;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 40%;
+    height: auto;
+}
+
+/* Estilos del menú lateral */
+.sidebar {
+    width: 80%;
+    max-width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #5f8db5ff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: rgb(174, 193, 209);
+}
+
+.sidebar details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.bg {
+    background-image: url('background.jpg');
+    height: calc(100% - 70px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 40, 71, 0.7);
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.container input[type="email"],
+.container input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.container button,
+.container .google-btn {
+    width: 85%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #002847;
+    color: white;
+    cursor: pointer;
+}
+
+.container .google-btn {
+    background-color: #FA4616;
+}
+
+.container button:hover,
+.container .google-btn:hover {
+    opacity: 0.9;
+}
+
+.container a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 3;
+}
+
+h2 {
+    color: #002847;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    .container input[type="email"],
+    .container input[type="password"],
+    .container button,
+    .container .google-btn {
+        padding: 8px;
+    }
+}
+
+footer {
+    background-color: #002847;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
