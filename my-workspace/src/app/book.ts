@@ -4,5 +4,6 @@ export interface Book {
     category:string,
     url:string,
     imgUrl:string,
-    saved:boolean
+    saved:boolean,
+    hasAudio: boolean
 }
