@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Book } from '../../book';
-import { BookComponent } from '../../components/book/book.component';
+import { BookComponent } from '../book/book.component';
 import { CommonModule } from '@angular/common';
 import { books } from '../../lista_de_libros';
 

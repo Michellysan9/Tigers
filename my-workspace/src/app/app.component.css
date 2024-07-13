@@ -5,22 +5,12 @@ body {
   flex-direction: column;
 }
 
-app-navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-
-main {
-  flex-grow: 1;
+.app-container {
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-app-pagina-buscador {
-  flex-grow: 1;
-}
-
-app-footer {
-  margin-top: auto; /* Push the footer to the bottom */
+.main-content {
+  flex: 1;
 }

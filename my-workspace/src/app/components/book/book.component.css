@@ -34,8 +34,14 @@
   font-size: 14px;
   font-weight: bold;
   width: 100%;
+  padding: .5em;
+  background-color: transparent;
 }
 
 .btn:hover {
   opacity: 0.8;
+}
+
+i{
+  font-size: 1.2rem;
 }

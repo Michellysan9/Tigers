@@ -1,8 +1,8 @@
 import { Component, Input } from '@angular/core';
-import { NavbarComponent } from '../../components/navbar/navbar.component';
-import { FooterComponent } from '../../components/footer/footer.component';
+import { NavbarComponent } from '../navbar/navbar.component';
+import { FooterComponent } from '../footer/footer.component';
 import { Book } from '../../book';
-import { BookComponent } from '../../components/book/book.component';
+import { BookComponent } from '../book/book.component';
 import { CommonModule } from '@angular/common';
 import { books } from '../../lista_de_libros';
 @Component({

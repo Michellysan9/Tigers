@@ -1,13 +1,9 @@
-<div class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+<div class="sidebar" [style.left]="isOpen ? '0px' : '-250px'">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">×</a>
     <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Acerca de</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
+        <a [routerLink]="['/login']">Iniciar Sesión</a>
+        <a [routerLink]="['/']">Inicio</a>
+        <a [routerLink]="['/accesible']">Accesible</a>
+        <a [routerLink]="['/biblioteca']">Biblioteca</a>
     </ul>
 </div>

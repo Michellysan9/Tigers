@@ -1,0 +1,28 @@
+
+<div class="bg">
+    <div class="overlay"></div>
+    <div class="container">
+        
+        <div id="signup">
+            <h2>Crea tu cuenta</h2>
+            <input id="signup-email" type="email" placeholder="Ingresa tu correo electrónico" required>
+            <input id="signup-password" type="password" placeholder="Contraseña" required>
+            <button onclick="signup()">Continuar</button>
+            <p>o continúa con</p>
+            <button class="google-btn">Google</button>
+            <p>Al hacer clic en continuar, aceptas nuestros <a href="#">Términos de Servicio</a> y <a href="#">Política de Privacidad</a></p>
+        </div>
+
+        <div id="login" style="display: none;">
+            <h2>Inicia Sesión</h2>
+            <input id="login-email" type="email" placeholder="Ingresa tu correo electrónico" required>
+            <input id="login-password" type="password" placeholder="Contraseña" required>
+            <button onclick="login()">Iniciar Sesión</button>
+            <p>o continúa con</p>
+            <button class="google-btn">Google</button>
+            <p><a href="#" onclick="showSignup()">Crear una cuenta</a></p>
+        </div>
+    </div>
+</div>
+
+<button class="close-btn" onclick="redirectToHome()">X</button>

@@ -1,0 +1,71 @@
+.content {
+    padding: 2%;
+}
+
+.bus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bus input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #e7e5d9;
+    border-radius: 5px;
+}
+
+.bus button {
+    padding: 10px;
+    background-color: #618eb4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-item {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #e7e5d9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.book-image {
+    width: 100%;
+    height: auto;
+}
+
+.book-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.book-links button {
+    padding: 5px 10px;
+    background-color: #618eb4;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-links .fa-check {
+    color: green;
+}
+
+.book-links .fa-times {
+    color: red;
+}

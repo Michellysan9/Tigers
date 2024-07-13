@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { SidebarServiceService } from '../../services/sidebar-service.service';
 @Component({
   selector: 'app-navbar',
   standalone: true,
@@ -8,9 +9,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  menu: HTMLDivElement | null = document.querySelector('.sidebar');
+  constructor(private sidebarService: SidebarServiceService) {}
 
-  openNav() {
-    this.menu!.style.left = '0px';
+  toggleSidebar() {
+    this.sidebarService.toggle();
+  }
 }
-}
+
