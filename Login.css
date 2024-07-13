@@ -5,8 +5,8 @@ body, html {
 }
 
 .navbar, .sidebar {
-    background-color: #5f8db5ff;
-    color: #000;
+    background-color: #618eb4;
+    color: #002847;
 }
 
 .navbar {
@@ -19,7 +19,7 @@ body, html {
 .menu-icon {
     font-size: 30px;
     cursor: pointer;
-    color: #000;
+    color: #002847;
 }
 
 .logo-container {
@@ -43,7 +43,7 @@ body, html {
     position: fixed;
     top: 0;
     left: -250px;
-    background-color: #5f8db5ff;
+    background-color: #618eb4;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -59,13 +59,13 @@ body, html {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #fff;
+    color: #ffffff;
     display: block;
     transition: 0.3s;
 }
 
 .sidebar a:hover {
-    background-color: rgb(174, 193, 209);
+    background-color: #618eb4;
 }
 
 .sidebar details {
@@ -100,13 +100,13 @@ body, html {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 40, 71, 0.7);
+    background-color: #002847;
 }
 
 .container {
     position: relative;
     z-index: 2;
-    background: rgba(255, 255, 255, 0.9);
+    background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -128,8 +128,8 @@ body, html {
     margin: 10px 0;
     border: none;
     border-radius: 4px;
-    background-color: #002847;
-    color: white;
+    background-color: #618eb4;
+    color: #ffffff;
     cursor: pointer;
 }
 
@@ -143,7 +143,7 @@ body, html {
 }
 
 .container a {
-    color: #4CAF50;
+    color: #618eb4;
     text-decoration: none;
 }
 
@@ -155,8 +155,8 @@ body, html {
     position: absolute;
     top: 10px;
     right: 10px;
-    background: #ff0000;
-    color: white;
+    background: #FA4616;
+    color: #ffffff;
     border: none;
     border-radius: 50%;
     width: 30px;
@@ -169,7 +169,7 @@ body, html {
 }
 
 h2 {
-    color: #002847;
+    color: #618eb4;
 }
 
 /* Media Query for smaller screens */
@@ -195,8 +195,8 @@ h2 {
 }
 
 footer {
-    background-color: #002847;
-    color: white;
+    background-color: #618eb4;
+    color: #ffffff;
     text-align: center;
     padding: 10px 0;
     position: absolute;

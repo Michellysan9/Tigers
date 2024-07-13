@@ -8,7 +8,6 @@
 </head>
 <body>
     <div class="navbar">
-        <span class="menu-icon" onclick="openNav()">☰</span>
         <div class="logo-container">
             <img class="logo" src="img/SPC_logotipo_Horizontal_AlMargen_RGB (1).png" alt="SPC_logotipo_Horizontal_Secretos_para_contar">
         </div>
@@ -29,15 +28,18 @@
         <div class="overlay"></div>
         <div class="container">
             
-            <div id="signup">
-                <h2>Crea tu cuenta</h2>
-                <input id="signup-email" type="email" placeholder="Ingresa tu correo electrónico" required>
-                <input id="signup-password" type="password" placeholder="Contraseña" required>
-                <button onclick="signup()">Continuar</button>
-                <p>o continúa con</p>
-                <button class="google-btn">Google</button>
-                <p>Al hacer clic en continuar, aceptas nuestros <a href="#">Términos de Servicio</a> y <a href="#">Política de Privacidad</a></p>
-            </div>
+            <!-- Dentro de tu <div class="container"> en el archivo HTML -->
+    <div id="signup">
+        <h2>Crea tu cuenta</h2>
+        <input id="signup-email" type="email" placeholder="Ingresa tu correo electrónico" required>
+        <input id="signup-password" type="password" placeholder="Contraseña" required>
+        <button id="signup-button">Continuar</button>
+        <p>o continúa con</p>
+        <button class="google-btn">Google</button>
+        <p>Al hacer clic en continuar, aceptas nuestros <a href="#">Términos de Servicio</a> y <a href="#">Política de Privacidad</a></p>
+        <div id="signup-message"></div> <!-- Aquí se mostrarán los mensajes -->
+    </div>
+
 
             <div id="login" style="display: none;">
                 <h2>Inicia Sesión</h2>
