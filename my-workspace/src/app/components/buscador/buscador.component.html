@@ -1,0 +1,7 @@
+<div id="buscador">
+    <select #categorySelect (change)="onCategoryChange(categorySelect.value)" name="categorySelector" id="categoriaSeleccionada">
+        <option value="">Selecciona una categoria</option>
+        <option *ngFor="let category of categorias" [value]="category">{{category}}</option>
+    </select>
+    <input #searchInput (input)="onSearchChange(searchInput.value)" type="search" name="q" id="barraBusqueda" placeholder="Busca un libro">
+</div>

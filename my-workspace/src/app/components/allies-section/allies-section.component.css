@@ -1,0 +1,18 @@
+.allies-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+.allies {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.ally-image {
+  width: 150px;
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+.ally-image:hover {
+  transform: scale(1.1);
+}

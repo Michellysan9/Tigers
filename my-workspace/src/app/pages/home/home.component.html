@@ -1,0 +1,20 @@
+<div class="home-container">
+    <!-- Content -->
+    <div class="main-content">
+        <div class="popup-container">
+            <h1>Bienvenidos a Secretos Para Contar</h1>
+            <p>Visita nuestro sitio web:</p>
+            <p><a href="https://secretosparacontar.org/" id="openPopup"  target="_blank" class="popup-button">Ir al sitio</a></p>
+        </div>
+        <div class="content">
+
+            <h1>Bienvenidos a Secretos Para Contar</h1>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img *ngFor="let book of books" [src]="book.imgUrl" alt="" class="mi-imagen">
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-allies-section></app-allies-section>
+</div>

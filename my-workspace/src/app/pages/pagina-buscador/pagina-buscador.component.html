@@ -1,0 +1,13 @@
+<body>
+    <div class="container">
+        <div id="mainContent">
+            <app-buscador [categorias]="categorias"
+                (categorySelected)="selectedCategory= $event"
+                (searchValueChanged)="searchValue= $event"            
+            ></app-buscador>
+            <div class="bookContainer">
+                <app-book *ngFor="let libro of filteredBooks(selectedCategory, searchValue)" [book]="libro"></app-book>
+            </div>
+        </div>
+    </div>
+</body>
