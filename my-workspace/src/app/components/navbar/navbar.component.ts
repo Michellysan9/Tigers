@@ -1,18 +1,23 @@
-import { Component, Inject } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { SidebarServiceService } from '../../services/sidebar-service.service';
+import { SidebarComponent } from '../sidebar/sidebar.component';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, SidebarComponent, CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
-  constructor(private sidebarService: SidebarServiceService) {}
+  isSidebarVisible = false;
 
-  toggleSidebar() {
-    this.sidebarService.toggle();
+  openNav() {
+    this.isSidebarVisible = true;
+  }
+
+  closeNav() {
+    this.isSidebarVisible = false;
   }
 }
 

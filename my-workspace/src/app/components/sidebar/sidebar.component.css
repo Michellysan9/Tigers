@@ -11,6 +11,11 @@
   padding-top: 60px;
   z-index: 1;
 }
+
+.sidebar.open {
+  left: 0;
+}
+
 .sidebar ul {
   list-style: none;
   padding: 0;
