@@ -30,7 +30,9 @@ export class BookComponent {
 
   goToBookPage() {
     // Navega a la pagina del libro
-    this.router.navigate(['/book', this.book.name]);
+    // this.router.navigate(['/book', this.book.name]);
+    const url = this.book.url
+    window.open(url, '_blank')
   }
 
   saveBooks() {
