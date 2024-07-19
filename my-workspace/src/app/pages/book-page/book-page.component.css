@@ -1,0 +1,22 @@
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+button{
+    background: transparent;
+    border: 1px solid #ddd;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 100%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.container {
+    display: grid;
+    padding: 5%;
+    grid-template-columns: 30% 70%;
+    column-gap: 1em;
+    height: 100%;
+}
