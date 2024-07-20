@@ -6,7 +6,7 @@ import { books } from '../../lista_de_libros';
 @Component({
   selector: 'app-book',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './book.component.html',
   styleUrl: './book.component.css'
 })
@@ -30,9 +30,7 @@ export class BookComponent {
 
   goToBookPage() {
     // Navega a la pagina del libro
-    // this.router.navigate(['/book', this.book.name]);
-    const url = this.book.url
-    window.open(url, '_blank')
+    this.router.navigate(['/book', this.book.name]);
   }
 
   saveBooks() {

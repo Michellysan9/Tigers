@@ -3,9 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Book } from '../../book';
 import { books } from '../../lista_de_libros';
 import { CommonModule } from '@angular/common';
-// import { PdfViewerComponent } from 'ng2-pdf-viewer';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
-
 
 @Component({
   selector: 'app-book-page',
@@ -16,13 +14,17 @@ import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 })
 export class BookPageComponent {
   book: Book | undefined;
+  pdfSource: string | undefined;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
       const bookName = params.get('name');
       this.book = books.find(b => b.name === bookName)
+      if (this.book) {
+        this.pdfSource = this.book.url
+      }
     })
   }
 }

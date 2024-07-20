@@ -2,19 +2,23 @@
     <img [src]="book.imgUrl" [alt]="book.name">
     <h3>{{ book.name }}</h3>
     <div class="buttons">
-        <button class="btn btn-primary" (click)="goToBookPage()"><i class="fa-solid fa-expand"></i></button>
+        <button class="btn btn-primary">
+            <a [href]="book.url" target="_blank">
+            <i class="fa-solid fa-expand"></i>
+        </a>
+        </button>
         <button class="btn btn-secondary" (click)="saveToLibrary()">
             @if (book.saved === true) {
-                <i class="fa-solid fa-bookmark"></i>
+            <i class="fa-solid fa-bookmark"></i>
             } @else {
-                <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-regular fa-bookmark"></i>
             }
         </button>
         <button class="btn btn-success" (click)="saveToFavorites()">
             @if (book.favorite === true) {
-                <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
             } @else {
-                <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
             }
         </button>
     </div>
