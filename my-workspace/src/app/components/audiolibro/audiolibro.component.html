@@ -1,4 +1,3 @@
 <div class="audiobook">
     <h3>{{book.name}}<h3>
-            <audio src="audios/programa_1.mp3" controls hidden></audio>
-            <button class="play-pause-button">Play</button>
+            <iframe [src]="getSafeUrl(book.audioLink)" width='100%' height='400px' frameborder='0'></iframe>

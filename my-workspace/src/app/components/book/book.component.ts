@@ -40,9 +40,18 @@ export class BookComponent {
 
   loadBooks() {
     // Toma los libros toma los libros y los convierte de JSON a objeto y los asigna
+    // const storedBooks = localStorage.getItem('books');
+    // if (storedBooks) {
+    //   Object.assign(books, JSON.parse(storedBooks));
+    // }
     const storedBooks = localStorage.getItem('books');
     if (storedBooks) {
-      Object.assign(books, JSON.parse(storedBooks));
+      const parsedBooks = JSON.parse(storedBooks);
+      books.forEach((book, index) => {
+        if (parsedBooks[index]) {
+          Object.assign(book, parsedBooks[index]);
+        }
+      });
     }
   }
 

@@ -5,5 +5,6 @@ export interface Book {
     url:string,
     imgUrl:string,
     saved:boolean,
-    hasAudio: boolean
+    hasAudio: boolean,
+    audioLink: string
 }

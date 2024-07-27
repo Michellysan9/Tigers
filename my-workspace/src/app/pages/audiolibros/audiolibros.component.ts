@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import { books } from '../../lista_de_libros';
 import { AudiolibroComponent } from '../../components/audiolibro/audiolibro.component';
 import { CommonModule } from '@angular/common';
