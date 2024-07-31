@@ -83,3 +83,64 @@
   margin-left: 50px;
   cursor: pointer;
 }
+
+/* Add this at the end of your existing CSS */
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .logo-container {
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    max-width: 60%;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu a {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sidebar {
+    width: 200px;
+  }
+}
+
+/* Phone styles */
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .logo {
+    max-width: 80%;
+  }
+
+  .menu-icon {
+    font-size: 2rem;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .sidebar a {
+    font-size: 1rem;
+  }
+
+  .closebtn {
+    font-size: 2.5rem;
+  }
+}

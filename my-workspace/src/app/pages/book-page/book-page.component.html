@@ -2,10 +2,10 @@
     <div class="bookInfo">
         <img [src]="book.imgUrl" [alt]="book.name">
         <h1>{{book.name}}</h1>
-        <button><i class="fa-solid fa-angles-left"></i></button>
+        <button (click)="volver()"><i class="fa-solid fa-angles-left"></i></button>    
     </div>
     <div class="pdfViewer">
-        <ngx-extended-pdf-viewer *ngIf="pdfSource" [src]="pdfSource" [height]="'90vh'" [textLayer]="true"
-            [showHandToolButton]="true"></ngx-extended-pdf-viewer>
+        <iframe [src]="pdfSource"></iframe>
     </div>
+    <app-audiolibro *ngIf="book.hasAudio" [book]="book"></app-audiolibro>
 </div>

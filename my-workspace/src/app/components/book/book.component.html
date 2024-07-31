@@ -2,10 +2,8 @@
     <img [src]="book.imgUrl" [alt]="book.name">
     <h3>{{ book.name }}</h3>
     <div class="buttons">
-        <button class="btn btn-primary">
-            <a [href]="book.url" target="_blank">
+        <button class="btn btn-primary" (click)="goToBookPage()">
             <i class="fa-solid fa-expand"></i>
-        </a>
         </button>
         <button class="btn btn-secondary" (click)="saveToLibrary()">
             @if (book.saved === true) {

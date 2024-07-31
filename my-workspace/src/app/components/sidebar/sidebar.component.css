@@ -43,3 +43,53 @@
   font-size: 36px;
   margin-left: 50px;
 }
+
+/* Add this at the end of your existing CSS in sidebar.component.css */
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    max-width: 200px;
+    left: -150%;
+  }
+
+  .sidebar a {
+    font-size: 20px;
+    padding: 6px 6px 6px 24px;
+  }
+
+  .sidebar .closebtn {
+    font-size: 30px;
+    right: 20px;
+  }
+}
+
+/* Phone styles */
+@media screen and (max-width: 480px) {
+  .sidebar {
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    left: -100%;
+    padding-top: 50px;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+  .sidebar .closebtn {
+    font-size: 30px;
+    right: 20px;
+    top: 10px;
+  }
+
+  .sidebar ul {
+    margin-top: 20px;
+  }
+}
