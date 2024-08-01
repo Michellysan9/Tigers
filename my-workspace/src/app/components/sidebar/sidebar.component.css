@@ -67,29 +67,6 @@
 /* Phone styles */
 @media screen and (max-width: 480px) {
   .sidebar {
-    width: 100%;
-    max-width: 100%;
-    height: 100vh;
-    left: -100%;
-    padding-top: 50px;
-  }
-
-  .sidebar.open {
-    left: 0;
-  }
-
-  .sidebar a {
-    font-size: 18px;
-    padding: 15px 20px;
-  }
-
-  .sidebar .closebtn {
-    font-size: 30px;
-    right: 20px;
-    top: 10px;
-  }
-
-  .sidebar ul {
-    margin-top: 20px;
+    display: none;
   }
 }

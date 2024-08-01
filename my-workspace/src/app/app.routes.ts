@@ -4,7 +4,6 @@ import { PaginaBuscadorComponent } from './pages/pagina-buscador/pagina-buscador
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { AccesibleComponent } from './pages/accesible/accesible.component';
-import { AudiolibrosComponent } from './pages/audiolibros/audiolibros.component';
 import { BookPageComponent } from './pages/book-page/book-page.component';
 
 export const routes: Routes = [
@@ -12,7 +11,5 @@ export const routes: Routes = [
     { path: 'buscador', component: PaginaBuscadorComponent },
     { path: '', component: HomeComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'accesible', component: AccesibleComponent },
-    { path: 'audiolibros', component: AudiolibrosComponent },
     { path: 'book/:name', component: BookPageComponent}
 ];

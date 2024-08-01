@@ -1,5 +1,5 @@
 <div class="book">
-    <img [src]="book.imgUrl" [alt]="book.name">
+    <img [src]="getImageUrl()" [alt]="book.name">
     <h3>{{ book.name }}</h3>
     <div class="buttons">
         <button class="btn btn-primary" (click)="goToBookPage()">

@@ -9,3 +9,28 @@
 #mainContent {
     background-color: white;
 }
+
+/* Media Queries for Responsiveness */
+
+/* For tablets */
+@media screen and (max-width: 1024px) {
+    .bookContainer {
+        grid-template-columns: repeat(4, minmax(100px, 1fr));
+    }
+}
+
+/* For large smartphones */
+@media screen and (max-width: 768px) {
+    .bookContainer {
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
+        padding: 3%;
+    }
+}
+
+/* For small smartphones */
+@media screen and (max-width: 480px) {
+    .bookContainer {
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        padding: 2%;
+    }
+}

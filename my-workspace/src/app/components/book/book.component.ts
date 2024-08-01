@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Book } from '../../book';
 import { RouterLink, Router } from '@angular/router';
 import { books } from '../../lista_de_libros';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-book',
@@ -14,7 +15,23 @@ export class BookComponent {
   // Recibe la propiedad book que debe ser un objeto de tipo Book
   @Input() book!: Book;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private sanitizer: DomSanitizer) {
+    this.loadBooks();
+    this.saveBooks();
+  }
+
+  getImageUrl(): string {
+    if (this.book.imgUrl.startsWith('http')) {
+      return this.sanitizer.bypassSecurityTrustUrl(this.book.imgUrl) as string;
+    }
+    this.updateBookImage(this.book.name, this.book.imgUrl)
+    return this.book.imgUrl;
+  }
+
+  updateBookImage(bookName: string, newImgUrl: string) {
+    this.updateBookProperties(bookName, { imgUrl: newImgUrl });
+  }
+
 
   // Esta funcion toma el nombre del libro a modificar y la propiedad a modificar por medio de un objeto que puede contener cualquier propiedad del interface Book
   updateBookProperties(bookName: string, newProperties: Partial<Book>) {
@@ -40,10 +57,6 @@ export class BookComponent {
 
   loadBooks() {
     // Toma los libros toma los libros y los convierte de JSON a objeto y los asigna
-    // const storedBooks = localStorage.getItem('books');
-    // if (storedBooks) {
-    //   Object.assign(books, JSON.parse(storedBooks));
-    // }
     const storedBooks = localStorage.getItem('books');
     if (storedBooks) {
       const parsedBooks = JSON.parse(storedBooks);
