@@ -44,8 +44,12 @@ a{
 }
 
 .btn:hover {
-  opacity: 0.8;
-  transform: scale(1.2);
+  opacity: 0.5;
+  transform: scale(1.5);
+}
+
+.btn-primary {
+  font-size: 1.5rem;
 }
 
 i{

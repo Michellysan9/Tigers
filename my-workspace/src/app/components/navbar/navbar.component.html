@@ -6,18 +6,16 @@
   </div>
   <div class="menu">
     <a [routerLink]="['/buscador']">Libros</a>
-    <a [routerLink]="['/biblioteca']">Biblioteca</a>
-    <a [routerLink]="['/audiolibros']">Audiolibros</a>
+    <a [routerLink]="['/biblioteca']">Mi Biblioteca</a>
   </div>
 </div>
 
 <!-- <app-sidebar></app-sidebar> -->
-<div class="sidebar" [style.left]="isSidebarVisible ? '0' : '-100%'">
+<div class="sidebar" [style.left]="isSidebarVisible ? '0' : '-100%'" [style.visibility]="isSidebarVisible ? 'visible' : 'hidden'">
   <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
   <ul>
     <li><a [routerLink]="['/login']">Iniciar Sesión</a></li>
     <li><a [routerLink]="['/']">Inicio</a></li>
-    <li> <a [routerLink]="['/accesible']">Accesible</a></li>
-    <li><a [routerLink]="['/biblioteca']">Biblioteca</a></li>
+    <li><a [routerLink]="['/biblioteca']">Mi Biblioteca</a></li>
   </ul>
 </div>

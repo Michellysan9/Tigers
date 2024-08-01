@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { NgxExtendedPdfViewerModule } from 'ngx-extended-pdf-viewer';
 import { AudiolibroComponent } from '../../components/audiolibro/audiolibro.component';
 import { DomSanitizer } from '@angular/platform-browser';
+import { ThisReceiver } from '@angular/compiler';
 
 @Component({
   selector: 'app-book-page',
@@ -31,6 +32,14 @@ export class BookPageComponent {
 
   volver(){
     this.router.navigate(['/buscador'])
-
   }
+
+  esconderBotones(){
+    const buttons = document.querySelectorAll('.btn')
+    buttons.forEach((button: Element) => {
+      (button as HTMLElement).style.display = 'none';
+    });  }
+
+  mostrarPdf(){ document.getElementById('pdf')!.style.display = 'block'; this.esconderBotones() }
+  mostrarAudio() {document.getElementById('audio')!.style.display = 'block'; this.esconderBotones() }
 }

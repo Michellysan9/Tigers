@@ -11,6 +11,7 @@ button{
     width: 100%;
     font-size: 1.5rem;
     border-radius: 5px;
+    grid-column: span 2;
 }
 
 iframe{
@@ -27,22 +28,8 @@ iframe{
     row-gap: 2em;
 }
 
-app-audiolibro{
-    grid-column: span 2;
-}
-
-/* Existing styles remain unchanged */
-
-/* Media query for tablets */
-@media screen and (max-width: 768px) {
-  .container {
-    grid-template-columns: 1fr;
-    row-gap: 1em;
-  }
-  
-  button {
-    font-size: 1.2rem;
-  }
+.btn{
+  display: none;
 }
 
 /* Media query for tablets */
@@ -77,5 +64,21 @@ app-audiolibro{
   
     iframe {
       height: 100%;
+    }
+
+    img{
+      display: none;
+    }
+
+    .pdfViewer{
+      display: none;
+    }
+
+    app-audiolibro{
+      display: none;
+    }
+
+    .btn{
+      display: block;
     }
   }
