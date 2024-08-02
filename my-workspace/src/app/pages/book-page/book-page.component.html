@@ -1,26 +1,26 @@
 <div class="container" *ngIf="book">
     @if (book.hasAudio) {
-        <div class="bookInfo">
-            <img [src]="book.imgUrl" [alt]="book.name">
-            <h1>{{book.name}}</h1>
-            <app-audiolibro [book]="book" id="audio"></app-audiolibro>
-        </div>
-        <div class="pdfViewer" id="pdf">
-            <iframe [src]="pdfSource"></iframe>
-        </div>
-        <div class="btn">
-            <button (click)="mostrarPdf()">PDF</button>
-            <button (click)="mostrarAudio()">AUDIO</button>
-        </div>
-        <button (click)="volver()"><i class="fa-solid fa-angles-left"></i></button>
+    <div class="bookInfo">
+        <img [src]="book.imgUrl" [alt]="book.name">
+        <h1>{{book.name}}</h1>
+        <app-audiolibro [book]="book" id="audio"></app-audiolibro>
+    </div>
+    <div class="pdfViewer" id="pdf">
+        <iframe [src]="pdfSource"></iframe>
+    </div>
+    <div class="button">
+        <button class="mobile" id="pdfButton" (click)="mostrarPdf()">PDF</button>
+        <button class="mobile" id="audio" (click)="mostrarAudio()">AUDIO</button>
+    </div>
+    <button (click)="volver()"><i class="fa-solid fa-angles-left"></i></button>
     } @else {
-        <div class="bookInfo">
-            <img [src]="book.imgUrl" [alt]="book.name">
-            <h1>{{book.name}}</h1>
-            <button (click)="volver()"><i class="fa-solid fa-angles-left"></i></button>
-        </div>
-        <div class="pdfViewer">
-            <iframe [src]="pdfSource"></iframe>
-        </div>
+    <div class="bookInfo">
+        <img [src]="book.imgUrl" [alt]="book.name">
+        <h1>{{book.name}}</h1>
+        <button id="volver" (click)="volver()"><i class="fa-solid fa-angles-left"></i></button>
+    </div>
+    <div class="pdfViewer" style="display: block;">
+        <iframe [src]="pdfSource"></iframe>
+    </div>
     }
 </div>

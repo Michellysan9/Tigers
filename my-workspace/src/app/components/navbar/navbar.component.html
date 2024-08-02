@@ -7,6 +7,7 @@
   <div class="menu">
     <a [routerLink]="['/buscador']">Libros</a>
     <a [routerLink]="['/biblioteca']">Mi Biblioteca</a>
+    <button id="toggleDarkMode" (click)="toggleDarkMode()"><i class="fas" [ngClass]="{'fa-moon': !isDarkMode, 'fa-sun': isDarkMode}"></i></button>
   </div>
 </div>
 

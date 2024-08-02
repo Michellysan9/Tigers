@@ -1,36 +1,39 @@
 .bookContainer {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(100px, 1fr));
-    column-gap: 5px;
-    row-gap: 20px;
-    padding: 5%;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+  column-gap: 5px;
+  row-gap: 20px;
+  padding: 5%;
 }
 
-#mainContent {
-    background-color: white;
+.dark-mode #mainContent {
+  background-color: #1a1a1a;
 }
 
-/* Media Queries for Responsiveness */
+.dark-mode .bookContainer {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
 
 /* For tablets */
 @media screen and (max-width: 1024px) {
-    .bookContainer {
-        grid-template-columns: repeat(4, minmax(100px, 1fr));
-    }
+  .bookContainer {
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+  }
 }
 
 /* For large smartphones */
 @media screen and (max-width: 768px) {
-    .bookContainer {
-        grid-template-columns: repeat(3, minmax(100px, 1fr));
-        padding: 3%;
-    }
+  .bookContainer {
+    grid-template-columns: repeat(3, minmax(100px, 1fr));
+    padding: 3%;
+  }
 }
 
 /* For small smartphones */
 @media screen and (max-width: 480px) {
-    .bookContainer {
-        grid-template-columns: repeat(2, minmax(100px, 1fr));
-        padding: 2%;
-    }
+  .bookContainer {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    padding: 2%;
+  }
 }

@@ -6,3 +6,10 @@
     row-gap: 20px;
     padding: 5%;
 }
+
+
+@media screen {
+    .bookContainer{
+        grid-template-columns: 1fr;
+    }
+}

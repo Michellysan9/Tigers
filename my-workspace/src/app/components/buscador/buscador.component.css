@@ -6,15 +6,19 @@ form {
 
 select {
   height: 100%;
-  border: 1px solid #ccc;
   font-size: 1.5rem;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: .3em;
 }
 
 input[type="search"] {
   width: 100%;
   height: 100%;
-  border: 1px solid #ccc;
   font-size: 1.5rem;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: .3em;
 }
 
 #buscador {
@@ -22,4 +26,15 @@ input[type="search"] {
   padding: 2% 5% 0 5%;
   height: 10%;
   justify-content: center;
+}
+
+@media screen and (max-width:768px) {
+  select {
+    text-overflow: ellipsis;
+    width: 1em;
+  }
+
+  select option {
+    font-size: .5rem;
+  }
 }

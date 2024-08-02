@@ -4,13 +4,10 @@ img {
 }
 
 button{
-    background: transparent;
-    border: 1px solid #ddd;
     padding-top: 1em;
     padding-bottom: 1em;
     width: 100%;
     font-size: 1.5rem;
-    border-radius: 5px;
     grid-column: span 2;
 }
 
@@ -78,7 +75,7 @@ iframe{
       display: none;
     }
 
-    .btn{
+    button{
       display: block;
     }
   }

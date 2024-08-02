@@ -35,7 +35,7 @@ export class BookPageComponent {
   }
 
   esconderBotones(){
-    const buttons = document.querySelectorAll('.btn')
+    const buttons = document.querySelectorAll('.mobile')
     buttons.forEach((button: Element) => {
       (button as HTMLElement).style.display = 'none';
     });  }

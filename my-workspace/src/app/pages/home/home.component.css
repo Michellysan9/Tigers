@@ -2,12 +2,7 @@
 
 /* Estilos generales */
 h1 {
-  color: #002847;
   font-size: 2.5rem;
-}
-
-p {
-  color: #002847;
 }
 
 /* Estilos del contenido */
@@ -56,48 +51,9 @@ button {
   transition: transform 0.5s ease-in-out;
 }
 
-.dark-mode {
-  background-color: #121212;
-  color: #ffffff;
-}
-
-.dark-mode .navbar,
-.dark-mode .sidebar {
-  background-color: #1f1f1f;
-  color: #ffffff;
-}
-
-.dark-mode .menu-icon {
-  color: #ffffff;
-}
-
-.dark-mode .logo {
-  filter: brightness(0) invert(1);
-}
-
-.dark-mode .search-icon {
-  color: #e7e5d9;
-}
-
-.dark-mode .footer {
-  background-color: #1f1f1f;
-  color: #ffffff;
-}
-
-.dark-mode .footer-links a {
-  color: #ffffff;
-}
-
-.dark-mode .footer-social a {
-  color: #ffffff;
-}
-.dark-mode .logo {
-  filter: brightness(0) invert(1); /* Esto podría cambiar el color del logo */
-}
 
 /* Estilos del popup */
 .popup-container {
-  background-color: #ffffff;
   border: 1px solid #e7e5d9;
   padding: 20px;
   max-width: 400px;
@@ -108,14 +64,9 @@ button {
 .popup-button {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #618eb4;
-  color: #ffffff#ffffff;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
-}
-.popup-button:hover {
-  background-color: #618eb4;
 }
 
 /* Estilos de la seccion de aliado */

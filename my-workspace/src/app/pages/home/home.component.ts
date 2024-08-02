@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
-import { SidebarComponent } from '../../components/sidebar/sidebar.component';
 import { AlliesSectionComponent } from '../../components/allies-section/allies-section.component';
 import { BuscadorComponent } from '../../components/buscador/buscador.component';
 import { OnInit, AfterViewInit } from '@angular/core';
@@ -11,7 +10,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FooterComponent, NavbarComponent, SidebarComponent, AlliesSectionComponent, BuscadorComponent, CommonModule],
+  imports: [FooterComponent, NavbarComponent, AlliesSectionComponent, BuscadorComponent, CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

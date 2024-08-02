@@ -4,8 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #5f8db5ff;
-  color: white;
   height: 10%;
   font-size: 1.2rem;
 }
@@ -13,7 +11,6 @@
 .menu-icon {
   font-size: 2.5rem;
   cursor: pointer;
-  color: #000;
 }
 
 .logo-container {
@@ -31,7 +28,6 @@
   align-items: center;
 }
 .menu a {
-  color: #000;
   text-decoration: none;
   padding: 0 15px;
   font-size: 1.2em;
@@ -47,7 +43,6 @@
   left: 0;
   width: 250px;
   height: 100vh;
-  background-color: #5f8db5ff;
   color: #fff;
   padding: 20px;
   transition: left 0.5s;
@@ -72,7 +67,7 @@
 }
 
 .sidebar a:hover {
-  background-color: #618eb4;
+  transform: scale(1.2);
 }
 
 .closebtn {
@@ -84,7 +79,16 @@
   cursor: pointer;
 }
 
-/* Add this at the end of your existing CSS */
+#toggleDarkMode{
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  margin-left: .5em;
+}
+
+#toggleDarkMode:hover{
+  transform: scale(1.2);
+}
 
 /* Tablet styles */
 @media screen and (max-width: 768px) {
