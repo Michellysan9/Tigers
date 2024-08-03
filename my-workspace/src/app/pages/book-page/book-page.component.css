@@ -78,4 +78,8 @@ iframe{
     button{
       display: block;
     }
+
+    .mobile{
+      display: block;
+    }
   }
