@@ -1,12 +1,11 @@
 import { Component, Output } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { VerMasTardeComponent } from "../../../../main/my-workspace/src/app/components/ver-mas-tarde/ver-mas-tarde.component";
 import { EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink, CommonModule, VerMasTardeComponent],
+  imports: [RouterLink, CommonModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
