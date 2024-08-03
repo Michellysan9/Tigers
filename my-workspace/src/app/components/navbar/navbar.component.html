@@ -5,14 +5,17 @@
       alt="SPC_logotipo_Horizontal_Secretos_para_contar">
   </div>
   <div class="menu">
+    <a [routerLink]="['/']" id="inicioMenu">Inicio</a>
     <a [routerLink]="['/buscador']">Libros</a>
     <a [routerLink]="['/biblioteca']">Mi Biblioteca</a>
-    <button id="toggleDarkMode" (click)="toggleDarkMode()"><i class="fas" [ngClass]="{'fa-moon': !isDarkMode, 'fa-sun': isDarkMode}"></i></button>
+    <button id="toggleDarkMode" (click)="toggleDarkMode()"><i class="fas"
+        [ngClass]="{'fa-moon': !isDarkMode, 'fa-sun': isDarkMode}"></i></button>
   </div>
 </div>
 
 <!-- <app-sidebar></app-sidebar> -->
-<div class="sidebar" [style.left]="isSidebarVisible ? '0' : '-100%'" [style.visibility]="isSidebarVisible ? 'visible' : 'hidden'">
+<div class="sidebar" [style.left]="isSidebarVisible ? '0' : '-100%'"
+  [style.visibility]="isSidebarVisible ? 'visible' : 'hidden'">
   <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
   <ul>
     <li><a [routerLink]="['/login']">Iniciar Sesión</a></li>

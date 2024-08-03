@@ -57,7 +57,8 @@ i {
 }
 
 .popup-container{
-  background-color: var(--bg-color-2);
+  background-color: var(--bg-color-1);
+  border: 1px solid var(--border-color);
 }
 
 .popup-button{
@@ -109,4 +110,16 @@ app-book-page button{
 
 .sidebar{
   background-color: var(--fn-color);
+}
+
+#loginContainer{
+  background-color: var(--bg-color-1);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+#loginContainer input{
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
 }

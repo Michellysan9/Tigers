@@ -54,7 +54,6 @@ button {
 
 /* Estilos del popup */
 .popup-container {
-  border: 1px solid #e7e5d9;
   padding: 20px;
   max-width: 400px;
   margin: 20px auto;

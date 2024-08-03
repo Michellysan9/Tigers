@@ -2,6 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { DOCUMENT } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -12,7 +13,7 @@ import { DOCUMENT } from '@angular/common';
 })
 
 export class LoginComponent implements OnInit {
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(@Inject(DOCUMENT) private document: Document, private router:Router) {}
 
   ngOnInit() {
     this.setupEventListeners();
@@ -45,6 +46,6 @@ export class LoginComponent implements OnInit {
   }
 
   redirectToHome() {
-    window.location.href = 'Inicio.html';
+    this.router.navigate(['/'])
   }
 }
